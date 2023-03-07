@@ -38,17 +38,16 @@ const ExpenseForm = (props) => {
         e.preventDefault();
         let errorList = [];
 
-        // if (!titleInput || titleInput === '') errorList.push(showErrorMessage('REQUIRED_FIELD', 'Title'));
-        // if (!amountInput || amountInput === '') errorList.push(showErrorMessage('REQUIRED_FIELD', 'Amount'));
-        // if (!dateInput || dateInput === '') errorList.push(showErrorMessage('REQUIRED_FIELD', 'Date'));
+        if (!titleInput || titleInput === '') errorList.push(showErrorMessage('REQUIRED_FIELD', 'Title'));
+        if (!amountInput || amountInput === '') errorList.push(showErrorMessage('REQUIRED_FIELD', 'Amount'));
+        if (!dateInput || dateInput === '') errorList.push(showErrorMessage('REQUIRED_FIELD', 'Date'));
 
         if (errorList.length <= 0) {
             const expenseData = {
                 title: titleInput,
                 amount: amountInput,
-                date: dateInput ? new Date(dateInput) : dateInput,
+                date: dateInput ? (new Date(dateInput)).toLocaleDateString() : dateInput,
             }
-            console.log('ExpenseForm:', props);
 
             props.onSaveExpenseData(expenseData);
             setTitle('');

@@ -1,7 +1,7 @@
 {
-  "name": "react-complete-guide",
+  "name": "expense-tracker-react-app",
   "version": "0.1.0",
-  "homepage": "https://zelenkis.github.io/expense-tracker-react-app/",
+  "homepage": "https://zelenkis.github.io/expense-tracker-react-app/index.html",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",

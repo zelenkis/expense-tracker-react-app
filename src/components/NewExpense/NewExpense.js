@@ -1,20 +1,20 @@
 import ExpenseForm from './ExpenseForm';
 import './NewExpense.css';
 import generateKey from '../../methods/generateUniqueKey';
+// import generateExpenseId from '../../methods/generateExpenseId';
 
 const NewExpense = (props) => {
 
     const submitExpenseDataHandler = (expenseDataInput) => {
         console.log('Expense Data is submitted..');
+        console.log(expenseDataInput);
         const expenseData = {
             ...expenseDataInput,
             id: generateKey()
         };
 
-        console.log('NewExpense:', props);
         props.onSubmitExpense(expenseData);
 
-        console.log(expenseData);
 
     }
 

@@ -14,7 +14,8 @@ body.light-mode {
 
 }
 
-.light-mode.expense-item h2 {
+.light-mode.expense-item h2,
+.light-mode.expenses-filter__control {
     color: #252422;
 }
 
@@ -63,4 +64,21 @@ input:checked+.slider:before {
     box-shadow: inset 12px 12px 24px #1ca283, inset -12px -12px 24px #18dbad;
     box-shadow: 5px 5px 12px #91918b, -5px -5px 12px #f9f9f9;
 
+}
+
+.expenses-filter.light-mode label {
+    font-weight: bold;
+    color: #18dbad;
+}
+
+.expenses-filter.light-mode select {
+    background-color: #edede9;
+    color: #403D39;
+    box-shadow: 5px 5px 12px #c9c9be, -5px -5px 12px #f9f9f9;
+    border: none;
+}
+
+option.light-mode:checked {
+    background-color: #18dbad;
+    color: #403D39;
 }

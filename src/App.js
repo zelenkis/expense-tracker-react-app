@@ -1,23 +1,36 @@
 import Expenses from './components/Expenses/Expenses';
-import expenses from './API/data';
+import initialExpenses from './API/data';
 import LightModeToggle from './components/LightMode/LightModeToggle';
 import NewExpense from './components/NewExpense/NewExpense';
+import { useState } from 'react';
 
 
 function App() {
 
-  const addExpenseToListHandler = expenseItem => {
-    console.log('App.js', 'submitting new expense to the list...');
-    console.log(expenseItem);
+  const [expenses, setExpenses] = useState(initialExpenses);
+
+  const addExpenseToListHandler = (newExpenseItem) => {
+    setExpenses((prevExpenses) => {
+      return [newExpenseItem, ...prevExpenses];
+    });
+  }
+
+  const [modeValue, setModeValue] = useState(true);
+
+  const getModeBooleanHandler = (item) => {
+    console.log(item);
+    if (item) setModeValue('dark-mode');
+    if (!item) setModeValue('light-mode');
 
   }
 
+
   return (
     <div>
-      <LightModeToggle />
+      <LightModeToggle viewModeToggleValue={getModeBooleanHandler} />
       <h2 className='app__title'>Expenses Tracker </h2>
       <NewExpense onSubmitExpense={addExpenseToListHandler} />
-      <Expenses items={expenses} />
+      <Expenses modeValue={modeValue} items={expenses} />
     </div>
   );
 }
