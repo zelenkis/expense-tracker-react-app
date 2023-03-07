@@ -59,7 +59,6 @@ input:checked+.slider:before {
 }
 
 .new-expense.light-mode button:active {
-
     background: linear-gradient(145deg, #2bfbcb, #1ca283);
     box-shadow: inset 12px 12px 24px #1ca283, inset -12px -12px 24px #18dbad;
     box-shadow: 5px 5px 12px #91918b, -5px -5px 12px #f9f9f9;
