@@ -1,0 +1,66 @@
+body.light-mode {
+    background-color: #edede9;
+}
+
+.light-mode.app__title {
+    color: #18dbad;
+}
+
+.light-mode.expenses,
+.light-mode.new-expense {
+    background: #edede9;
+    box-shadow: 27px 27px 22px #dfdfdd, -14px -13px 22px #f6f6f3;
+    color: #252422;
+
+}
+
+.light-mode.expense-item h2 {
+    color: #252422;
+}
+
+.light-mode.expense-item__price {
+    color: #252422;
+    background-color: #28ebbe;
+    box-shadow: 2px 2px 6px #28ebbe, -2px -2px 6px #b0eee0;
+}
+
+.light-mode.card {
+    background: #edede9;
+    box-shadow: 12px 12px 17px #dfdfdd, -14px -13px 22px #f6f6f3;
+}
+
+.slider.light-mode {
+    background-color: #edede9;
+    box-shadow: inset 5px 5px 8px #c6c6c2, inset -5px -5px 8px #f6f6f3;
+
+}
+
+.new-expense__actions.light-mode button {
+    box-shadow: 17px 17px 22px #d5d5d2, -14px -13px 22px #f6f6f3;
+}
+
+input:checked+.slider:before {
+    background: linear-gradient(145deg, #2bfbcb, #24d4ab);
+    box-shadow: 1px 1px 10px #1ca283, -1px -1px 10px #34fff9;
+}
+
+.fa-moon.light-mode {
+    color: #403D39;
+}
+
+
+.new-expense.light-mode button {
+
+    border-color: #59ffd8 #1ca283 #1ca283 #2bfbcb;
+    background: linear-gradient(145deg, #2bfbcb, #1ca283);
+    box-shadow: 5px 5px 12px #91918b, -5px -5px 12px #f9f9f9;
+
+}
+
+.new-expense.light-mode button:active {
+
+    background: linear-gradient(145deg, #2bfbcb, #1ca283);
+    box-shadow: inset 12px 12px 24px #1ca283, inset -12px -12px 24px #18dbad;
+    box-shadow: 5px 5px 12px #91918b, -5px -5px 12px #f9f9f9;
+
+}
