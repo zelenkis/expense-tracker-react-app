@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/expense-tracker-react-app/index.html/static/css/main.b3441507.css",
-    "main.js": "/expense-tracker-react-app/index.html/static/js/main.f61b526f.js",
-    "index.html": "/expense-tracker-react-app/index.html/index.html",
-    "main.b3441507.css.map": "/expense-tracker-react-app/index.html/static/css/main.b3441507.css.map",
-    "main.f61b526f.js.map": "/expense-tracker-react-app/index.html/static/js/main.f61b526f.js.map"
+    "main.css": "/expense-tracker-react-app/build/index.html/static/css/main.b3441507.css",
+    "main.js": "/expense-tracker-react-app/build/index.html/static/js/main.f61b526f.js",
+    "index.html": "/expense-tracker-react-app/build/index.html/index.html",
+    "main.b3441507.css.map": "/expense-tracker-react-app/build/index.html/static/css/main.b3441507.css.map",
+    "main.f61b526f.js.map": "/expense-tracker-react-app/build/index.html/static/js/main.f61b526f.js.map"
   },
   "entrypoints": [
     "static/css/main.b3441507.css",
