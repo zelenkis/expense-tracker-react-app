@@ -1,7 +1,7 @@
 {
   "name": "expense-tracker-react-app",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://zelenkis.github.io/expense-tracker-react-app/build/index.html",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
@@ -41,6 +41,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "gh-pages": "^5.0.0",
+    "process": "^0.11.10"
   }
 }
