@@ -10,7 +10,7 @@ function LightModeToggle(props) {
     //props is empty here coz we ain't passing anything
     const [checked, setChecked] = useState(true);
 
-    props.viewModeToggleValue(checked);
+
     const toggleScreenMode = () => {
         const selectors = [
             '.app__title',
@@ -27,10 +27,16 @@ function LightModeToggle(props) {
             'button',
             '.expenses-filter__control',
             '.expenses-filter',
-            'option'
+            'option',
+            '.chart-bar',
+            '.chart-bar__inner',
+            '.chart-bar__fill',
+            '.chart-bar__label'
         ];
 
+        props.viewModeToggleValue(checked);
         if (checked) {
+
             console.log('SET LIGHT MODE');
             setChecked(false);
             selectors.forEach(function (selector) {

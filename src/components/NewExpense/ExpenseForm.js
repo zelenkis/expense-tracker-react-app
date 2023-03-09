@@ -45,8 +45,8 @@ const ExpenseForm = (props) => {
         if (errorList.length <= 0) {
             const expenseData = {
                 title: titleInput,
-                amount: amountInput,
-                date: dateInput ? (new Date(dateInput)).toLocaleDateString() : dateInput,
+                amount: +amountInput,
+                date: (new Date(dateInput)).toString(),
             }
 
             props.onSaveExpenseData(expenseData);
@@ -90,7 +90,7 @@ const ExpenseForm = (props) => {
                         type='date'
                         value={dateInput}
                         onChange={dateChangeHandler}
-                        min='2023-01-01'
+                        min='2022-01-01'
                     />
                 </div>
 

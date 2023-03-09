@@ -19,8 +19,8 @@ function App() {
 
   const getModeBooleanHandler = (item) => {
     console.log(item);
-    if (item) setModeValue('dark-mode');
-    if (!item) setModeValue('light-mode');
+    if (!item) setModeValue('dark-mode');
+    if (item) setModeValue('light-mode');
 
   }
 

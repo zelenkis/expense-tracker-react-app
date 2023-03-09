@@ -2,7 +2,6 @@ import Card from '../UI/Card';
 import './ExpenseItem.css';
 
 function ExpenseItem(props) {
-    console.log('item props:', props.viewMode);
 
     return (
         <Card viewMode={props.viewMode}>

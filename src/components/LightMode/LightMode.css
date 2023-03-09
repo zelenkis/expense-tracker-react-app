@@ -2,7 +2,8 @@ body.light-mode {
     background-color: #edede9;
 }
 
-.light-mode.app__title {
+.app__title.light-mode,
+.chart-bar__label.light-mode {
     color: #18dbad;
 }
 
@@ -80,4 +81,24 @@ input:checked+.slider:before {
 option.light-mode:checked {
     background-color: #18dbad;
     color: #403D39;
+}
+
+
+.chart-bar.light-mode {
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 6px #dededb, -5px -5px 6px #f9f9f6;
+
+}
+
+.chart-bar__inner.light-mode {
+
+    background-color: #edede9;
+    box-shadow: inset 5px 5px 6px #dededb, inset -5px -5px 6px #f9f9f6;
+
+}
+
+.chart-bar__fill.light-mode {
+    background-color: #18dbad;
+    box-shadow: inset 1px 1px 3px #2bfbcb, inset -1px -1px 3px #1ca283;
+    transition: all 0.3s ease-out;
 }
